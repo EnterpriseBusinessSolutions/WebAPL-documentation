@@ -1,0 +1,79 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Crearea sondajelor și vizualizarea rezultatelor</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "crearea_sondajelor_i_vizualiza.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#F2F2F2">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Crearea sondajelor și vizualizarea rezultatelor</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="rezumat.htm">Top</a>&nbsp;
+     <a href="crearea_proiectelor.htm">Previous</a>&nbsp;
+     <a href="crearea_paginilor_cu_materiale.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Platforma WebAPL 1.0. prevede la etapa actuală crearea de sondaje de un singur tip: o întrebare cu variante de răspuns. Meniul Sondaje este un modul suplimentar creat și servește drept instrument pentru gestiunea sondajelor care pot fi plasate fie ca pagini separate, fie în interiorul unor pagini deja create. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim474.png" width="675" height="373" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Crearea sondajelor ca pagină separată.</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 1. În meniul Sondaje se accesează butonul Creează un sondaj nou </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim475.png" width="474" height="477" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Se vor completa informațiile de la secțiunea General, inclusiv: Data creări sondajului, Votare activă ce reflectă dacă sondajul primește voturi sau se află în perioada de răspuns butonul este ON - rezultatele sondajului se afișează când acesta este Off, , Vizibilitatea reflectă dacă sondajul este sau nu este plasat pe site. La secțiunea Limbi se adaugă denumirea sondajului în limbile de comunicare a site-ului </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">În secțiunea Răspunsuri, se accesează butonul Adaugă un răspuns care va duce la apariție unei pagini cu indicarea răspunsului </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim476.png" width="459" height="266" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Se va indica răspunsul în cele patru limbi și se va indica ordinea. Ordinea va indica aranjarea sondajelor în ordine invers cronologică., adică de la cel mai mare în &nbsp;jos. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 2. </span><span style="font-size: 11pt; font-family: 'Open Sans';">Se va crea, în Meniul Pagini, o pagină nouă cu tip de vizualizare Sondaje.</span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;"> </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim477.png" width="677" height="48" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">În acest sens sondajele deja sunt create li vor fi plasate pe site. Dacă un sondaj este creat dar s-a omis ai atribui întrebări, pe frontend va apărea mesajul </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim478.png" width="677" height="87" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Respectiv nu se va putea vota. Pentru a preveni votările multiple se ia în calcul memoria temporară a browser-ului (cookie) la care se adaugă IP-ul în număr maxim de 20 încercări. Adică, de pe un calculator se va putea vota o dată de pe un browser, iar dacă se va deschide alt browser votarea va fi permisă. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Crearea de sondaje în interiorul altor pagini </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Platforma Web APL permite a plasa sondajele în interiorul unei pagini</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">În acest sens, pentru a plasa un sondaj în interior unei pagini sunt necesar de executat mai mulți pași:</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 1</span><span style="font-size: 11pt; font-family: 'Open Sans';">. Mai întâi se va crea mesajul în mod clasic, așa cum a fost menționat mai sus </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 2</span><span style="font-size: 11pt; font-family: 'Open Sans';">. Se va deschide sondajul și din adresa browser-ului se va memora cifra de la finele liniei care de altfel reprezintă ID-ul (codul din baza de date) al sondajului creat.</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim479.png" width="424" height="130" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 3.</span><span style="font-size: 11pt; font-family: 'Open Sans';"> Se va deschide pagina în care se dorește a plasa un sondaj și în editorul de text se va introduce codul </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold; color: #ff0000;">[poll ID=Numărul de ID memorat]</span><span style="font-size: 11pt; font-family: 'Open Sans';">. În cazul dat se va scrie </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold; color: #ff0000;">[poll ID=13].</span><span style="font-size: 11pt; font-family: 'Open Sans'; color: #ff0000;"> </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Exemplu este prezentat mai jos. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim480.png" width="680" height="470" style="margin:1px; border:none" alt="" /><span style="font-size: 11pt; font-family: 'Open Sans';">După salvarea datelor, sondajul se va încadra în conținutul textului pagini și va fi reprezentat precum este indicat în imaginea de mai jos. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim481.png" width="680" height="384" style="margin:1px; border:none" alt="" /></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

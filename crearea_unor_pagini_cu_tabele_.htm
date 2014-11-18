@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Crearea unor pagini cu tabele speciale</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "crearea_unor_pagini_cu_tabele_.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#F2F2F2">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Crearea unor pagini cu tabele speciale</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="rezumat.htm">Top</a>&nbsp;
+     <a href="crearea_unei_pagini_cu_fiiere.htm">Previous</a>&nbsp;
+     <a href="crearea_paginilor_tip_autoriza.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">În cadrul platformei WebAPL sunt crete diverse instrumente complexe de editare a informațiilor iar o parte din aceste instrumente au fost create pentru a oferi posibilitatea ca la redimensionarea paginii pe diverse dimensiuni de ecran, să se păstreze acuratețea datelor și informațiilor plasate.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Una din problemele cele mai mari în cadrul elaborării site-urilor Responsive Mobile sunt tabelele și transformarea acestora în redimensionabile conform unor cerințe predefinite.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Pentru a crea asemenea tabele vom folosi exemplul de pagină Impozite și taxe locale.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Deci pagina dată reprezintă un tabel de impozite și taxe care cuprind informațiile din ultimii 3-4 ani. </span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim368.png" width="488" height="259" style="margin:1px; border:none" alt="" /></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Pentru a redimensiona acest tabel pe dispozitive mobile, e imposibil a menține toate coloanele intacte, astfel că e necesar a elimina careva coloane și în acest sens sistemul prevede 2 opțiuni.</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.15;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:24px"><span style="font-size:11pt; font-family: 'Open Sans';color:#000000;">1.</span></td><td style="border:none"><span style="font-size: 11pt; font-family: 'Open Sans';">Se păstrează doar prima și ultima coloană și celelalte se elimină pe dispozitive mici</span></td></tr></table></div><div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.15;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:24px"><span style="font-size:11pt; font-family: 'Open Sans';color:#000000;">2.</span></td><td style="border:none"><span style="font-size: 11pt; font-family: 'Open Sans';">Se păstrează prima și ultimele 2 coloane și celelalte se elimină pe dispozitive mici</span></td></tr></table></div><p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Iată pentru aceste 2 tipuri de modificări vom avea 2 stiluri de tabele </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">GREEN TABLE</span><span style="font-size: 11pt; font-family: 'Open Sans';"> ce se referă la prima din ele și </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">APARAT RESPONSIVE TABLE</span><span style="font-size: 11pt; font-family: 'Open Sans';"> ce se referă la a doua</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Pentru a aplica asemenea opțiuni e necesar.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 1.</span><span style="font-size: 11pt; font-family: 'Open Sans';"> De creat pagina pe care plasăm tabelul indicat cu tipul Default (ex. Impozite și taxe locale). Pe pagina dată se recomandă a nu aplica alte proprietăți, decât butoanele de socializare. </span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">Pasul 2</span><span style="font-size: 11pt; font-family: 'Open Sans';">. La limba română sau pentru fiecare din limbi se construiește tabelul utilizând Editorul de text CKEditor</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim369.png" width="664" height="475" style="margin:1px; border:none" alt="" /></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Se selectează tabelul și de pe bara de instrumente, la butonul Stil se alege unul din cele 2 tipuri de formatări. Ca rezultat proprietățile se vor transpune și pagina se va redimensiona, iar tabelul își va păstra proprietățile.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

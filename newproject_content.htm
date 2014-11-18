@@ -1,0 +1,349 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <title>Manual WebAPL</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar   { font-size: 120%; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding: 0; margin: 0; }
+       #toc li { margin-top: 2px; }
+       #toc ul { padding-left:0; padding-right:0 }
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<p class="navbar"><b>Contents</b>
+ | <a href="newproject_kwindex.htm">Index</a>
+ | <a href="newproject_ftsearch.htm">Search</a>
+</p>
+<hr/>
+
+
+  <!-- Place holder for the TOC - this variable is REQUIRED! -->
+  <ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="rezumat.htm" target="hmcontent"><span class="heading1" id="s1">Rezumat</span></a>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="instalarea.htm" target="hmcontent"><span class="heading1" id="s2">Instalarea</span></a>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="structura_site-urilor_apl_fron.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Structura site-urilor apl (frontend)</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="pagina_principal.htm" target="hmcontent"><span class="heading2" id="s3.1">Pagina principală</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="paginile_interioare.htm" target="hmcontent"><span class="heading2" id="s3.2">Paginile interioare</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="sistemul_de_administrare_a_con.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Sistemul de administrare a conținutului (backtend)</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="informaii_generale.htm" target="hmcontent"><span class="heading2" id="s4.1">Informații generale</span></a>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="mecanismul_de_autentificare_in.htm" target="hmcontent"><span class="heading2" id="s4.2">Mecanismul de autentificare în backend</span></a>
+</li>
+<li class="heading2" id="i4.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="structura_cms-ului.htm" target="hmcontent"><span class="heading2" id="s4.3" ondblclick="return dblclicked(this)">Structura cms-ului</span></a>
+<ul id="ul4.3" style="list-style-type:none">
+<li class="heading3" id="i4.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.1" href="meniul_orizontal.htm" target="hmcontent"><span class="heading3" id="s4.3.1" ondblclick="return dblclicked(this)">Meniul orizontal</span></a>
+<ul id="ul4.3.1" style="list-style-type:none">
+<li class="heading4" id="i4.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.1" href="meniul_extensii.htm" target="hmcontent"><span class="heading4" id="s4.3.1.1">Meniul extensii</span></a>
+</li>
+<li class="heading4" id="i4.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.2" href="meniul_utilizatori.htm" target="hmcontent"><span class="heading4" id="s4.3.1.2">Meniul utilizatori</span></a>
+</li>
+<li class="heading4" id="i4.3.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.3" href="meniul_limbi.htm" target="hmcontent"><span class="heading4" id="s4.3.1.3">Meniul limbi</span></a>
+</li>
+<li class="heading4" id="i4.3.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.4" href="meniul_setri.htm" target="hmcontent"><span class="heading4" id="s4.3.1.4">Meniul setări</span></a>
+</li>
+<li class="heading4" id="i4.3.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.5" href="meniul_loguri.htm" target="hmcontent"><span class="heading4" id="s4.3.1.5">Meniul loguri</span></a>
+</li>
+<li class="heading4" id="i4.3.1.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.6" href="meniul_teme.htm" target="hmcontent"><span class="heading4" id="s4.3.1.6">Meniul teme</span></a>
+</li>
+<li class="heading4" id="i4.3.1.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.7" href="meniul_manager_de_fiiere.htm" target="hmcontent"><span class="heading4" id="s4.3.1.7">Meniul manager de fișiere</span></a>
+</li>
+<li class="heading4" id="i4.3.1.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.1.8" href="limbile_de_comunicare_in_cms.htm" target="hmcontent"><span class="heading4" id="s4.3.1.8">Limbile de comunicare în cms</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.2" href="meniul_vertical.htm" target="hmcontent"><span class="heading3" id="s4.3.2" ondblclick="return dblclicked(this)">Meniul vertical</span></a>
+<ul id="ul4.3.2" style="list-style-type:none">
+<li class="heading4" id="i4.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.1" href="meniul_pagini.htm" target="hmcontent"><span class="heading4" id="s4.3.2.1">Meniul pagini</span></a>
+</li>
+<li class="heading4" id="i4.3.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.2" href="tip_de_pagini_i_caracteristici.htm" target="hmcontent"><span class="heading4" id="s4.3.2.2">Tip de pagini și caracteristicile acestora</span></a>
+</li>
+<li class="heading4" id="i4.3.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.3" href="meniul_grupe_de_postri.htm" target="hmcontent"><span class="heading4" id="s4.3.2.3">Meniul grupe de postări</span></a>
+</li>
+<li class="heading4" id="i4.3.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.4" href="meniul_variabile.htm" target="hmcontent"><span class="heading4" id="s4.3.2.4">Meniul variabile</span></a>
+</li>
+<li class="heading4" id="i4.3.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.5" href="meniul_galerie.htm" target="hmcontent"><span class="heading4" id="s4.3.2.5">Meniul galerie</span></a>
+</li>
+<li class="heading4" id="i4.3.2.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.6" href="meniul_buletin_informativ.htm" target="hmcontent"><span class="heading4" id="s4.3.2.6">Meniul buletin informativ</span></a>
+</li>
+<li class="heading4" id="i4.3.2.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.7" href="meniul_persoane.htm" target="hmcontent"><span class="heading4" id="s4.3.2.7">Meniul persoane</span></a>
+</li>
+<li class="heading4" id="i4.3.2.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.8" href="meniul_calendar.htm" target="hmcontent"><span class="heading4" id="s4.3.2.8">Meniul calendar</span></a>
+</li>
+<li class="heading4" id="i4.3.2.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.9" href="meniul_plangeri.htm" target="hmcontent"><span class="heading4" id="s4.3.2.9">Meniul plângeri</span></a>
+</li>
+<li class="heading4" id="i4.3.2.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.10" href="meniul_angajri.htm" target="hmcontent"><span class="heading4" id="s4.3.2.10">Meniul angajări</span></a>
+</li>
+<li class="heading4" id="i4.3.2.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.11" href="meniul_sondaje.htm" target="hmcontent"><span class="heading4" id="s4.3.2.11">Meniul sondaje</span></a>
+</li>
+<li class="heading4" id="i4.3.2.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.12" href="meniul_discut_on-line.htm" target="hmcontent"><span class="heading4" id="s4.3.2.12">Meniul discută on-line</span></a>
+</li>
+<li class="heading4" id="i4.3.2.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.2.13" href="meniul_acte_localemd.htm" target="hmcontent"><span class="heading4" id="s4.3.2.13">Meniul acte localemd</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.3.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.3" href="caracteristica_i_modul_de_lucr.htm" target="hmcontent"><span class="heading3" id="s4.3.3" ondblclick="return dblclicked(this)">Caracteristica și modul de lucru cu editorul online de text ckeditor</span></a>
+<ul id="ul4.3.3" style="list-style-type:none">
+<li class="heading4" id="i4.3.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.1" href="ckeditor_v_x__prezentare_gener.htm" target="hmcontent"><span class="heading4" id="s4.3.3.1">Ckeditor v x – prezentare generală</span></a>
+</li>
+<li class="heading4" id="i4.3.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.2" href="referine_utile__butoane.htm" target="hmcontent"><span class="heading4" id="s4.3.3.2">Referințe utile – butoane</span></a>
+</li>
+<li class="heading4" id="i4.3.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.3" href="structura_interfeei_de_lucru_a.htm" target="hmcontent"><span class="heading4" id="s4.3.3.3">Structura interfeței de lucru a editorului de text ckeditor</span></a>
+</li>
+<li class="heading4" id="i4.3.3.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.4" href="lucru_cu_documentele.htm" target="hmcontent"><span class="heading4" id="s4.3.3.4" ondblclick="return dblclicked(this)">Lucru cu documentele</span></a>
+<ul id="ul4.3.3.4" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.1" href="crearea_unei_pagini_noi.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.1">Crearea unei pagini noi</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.2" href="vizualizarea_documentului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.2">Vizualizarea documentului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.3" href="sursa_documentelor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.3">Sursa documentelor</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.4" href="selectarea_abloanelor_template.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.4">Selectarea șabloanelor (template) și aspectul acestora</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.5" href="imprimarea_unui_document.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.5">Imprimarea unui document</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.6" href="anulare_i_refacere_undo_and_re.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.6">Anulare și refacere (undo and redo)</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.7" href="tierea__copierea_i_alipirea.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.7">Tăierea, copierea și alipirea</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.8" href="caut_i_inlocuiete.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.8">Caută și înlocuiește</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.9" href="selectarea_textului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.9">Selectarea textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.10" href="afiarea_blocurilor_textuale_al.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.10">Afișarea blocurilor textuale ale documentului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.4.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.4.11" href="terge_formatarea.htm" target="hmcontent"><span class="heading5" id="s4.3.3.4.11">Șterge formatarea</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i4.3.3.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.5" href="stilizarea_textului.htm" target="hmcontent"><span class="heading4" id="s4.3.3.5" ondblclick="return dblclicked(this)">Stilizarea textului</span></a>
+<ul id="ul4.3.3.5" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.5.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.1" href="denumirea_caracterelor__fontul.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.1">Denumirea caracterelor &nbsp;(fontului)</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.2" href="dimensiunea_caracterelor_fontu.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.2">Dimensiunea caracterelor (fontului)</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.3" href="bold__italic__subliniere_i_tie.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.3">Bold, italic, subliniere și tăierea caracterelor</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.4" href="atribuirea_de_culori_textului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.4">Atribuirea de culori textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.5" href="atribuirea_de_culori_fundalulu.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.5">Atribuirea de culori fundalului textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.6" href="suprascriere_i_subscriere.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.6">Suprascriere și subscriere</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.7" href="stiluri_predefinite.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.7">Stiluri predefinite</span></a>
+</li>
+<li class="heading5" id="i4.3.3.5.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.5.8" href="formatarea_paragrafelor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.5.8">Formatarea paragrafelor</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i4.3.3.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.6" href="aranjarea_in_pagin_a_textului.htm" target="hmcontent"><span class="heading4" id="s4.3.3.6" ondblclick="return dblclicked(this)">Aranjarea în pagină a textului</span></a>
+<ul id="ul4.3.3.6" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.6.1" href="aliniererea_textului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.6.1">Aliniererea textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.6.2" href="identarea_textului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.6.2">Identarea textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.6.3" href="gimilelele_sau_citatele.htm" target="hmcontent"><span class="heading5" id="s4.3.3.6.3">Gimilelele sau citatele</span></a>
+</li>
+<li class="heading5" id="i4.3.3.6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.6.4" href="crearea_unei_linii_orizontale.htm" target="hmcontent"><span class="heading5" id="s4.3.3.6.4">Crearea unei linii orizontale</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i4.3.3.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.7" href="crearea_textelor_formatate_ric.htm" target="hmcontent"><span class="heading4" id="s4.3.3.7" ondblclick="return dblclicked(this)">Crearea textelor formatate (rich text)</span></a>
+<ul id="ul4.3.3.7" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.7.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.1" href="crearea_listelor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.1">Crearea listelor</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.2" href="linkuri__emailuri_i_ancore.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.2">Linkuri, emailuri și ancore</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.3" href="inserarea_imaginilor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.3">Inserarea imaginilor</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.4" href="inserarea_obiectelor_flash.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.4">Inserarea obiectelor flash</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.5" href="inserarea_caracterelor_special.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.5">Inserarea caracterelor speciale</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.6" href="inserarea_de_emoticoane.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.6">Inserarea de emoticoane</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.7" href="crearea_tabelelor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.7">Crearea tabelelor</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.8" href="lucrul_cu_tabelele.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.8">Lucrul cu tabelele</span></a>
+</li>
+<li class="heading5" id="i4.3.3.7.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.7.9" href="inserarea_de_iframe.htm" target="hmcontent"><span class="heading5" id="s4.3.3.7.9">Inserarea de iframe</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i4.3.3.8" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.8" href="navigarea_util.htm" target="hmcontent"><span class="heading4" id="s4.3.3.8" ondblclick="return dblclicked(this)">Navigarea utilă</span></a>
+<ul id="ul4.3.3.8" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.8.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.1" href="navigare_de_baz.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.1">Navigare de bază</span></a>
+</li>
+<li class="heading5" id="i4.3.3.8.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.2" href="navigarea_pe_bara_de_instrumen.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.2">Navigarea pe bara de instrumente</span></a>
+</li>
+<li class="heading5" id="i4.3.3.8.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.3" href="navigarea_in_cadrul_ferestrelo.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.3">Navigarea în cadrul ferestrelor de dialog</span></a>
+</li>
+<li class="heading5" id="i4.3.3.8.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.4" href="navigarea_in_cadrul_meniurilor.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.4">Navigarea în cadrul meniurilor contextuale</span></a>
+</li>
+<li class="heading5" id="i4.3.3.8.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.5" href="navigarea_in_baza_listei_barel.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.5">Navigarea în baza listei barelor de instrumente</span></a>
+</li>
+<li class="heading5" id="i4.3.3.8.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.8.6" href="navigarea_in_ferestrele_de_cul.htm" target="hmcontent"><span class="heading5" id="s4.3.3.8.6">Navigarea în ferestrele de culori</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i4.3.3.9" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.9" href="comenzile_rapide_de_la_tastatu.htm" target="hmcontent"><span class="heading4" id="s4.3.3.9" ondblclick="return dblclicked(this)">Comenzile rapide de la tastatură</span></a>
+<ul id="ul4.3.3.9" style="list-style-type:none">
+<li class="heading5" id="i4.3.3.9.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.1" href="lucrul_cu_documentele.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.1">Lucrul cu documentele</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.2" href="navigarea.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.2">Navigarea</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.3" href="editare.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.3">Editare</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.4" href="undo_i_redo.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.4">Undo și redo</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.5" href="taie__copie__alipete.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.5">Taie, copie, alipește</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.6" href="selectare_textului.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.6">Selectare textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.7" href="stilizarea_textului2.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.7">Stilizarea textului</span></a>
+</li>
+<li class="heading5" id="i4.3.3.9.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a4.3.3.9.8" href="alte_comenzi.htm" target="hmcontent"><span class="heading5" id="s4.3.3.9.8">Alte comenzi</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="exploatarea_sistemul_de_manage.htm" target="hmcontent"><span class="heading2" id="s4.4" ondblclick="return dblclicked(this)">Exploatarea sistemul de management a conținutului (cms)</span></a>
+<ul id="ul4.4" style="list-style-type:none">
+<li class="heading3" id="i4.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.1" href="crearea_unei_pagini_simple.htm" target="hmcontent"><span class="heading3" id="s4.4.1">Crearea unei pagini simple</span></a>
+</li>
+<li class="heading3" id="i4.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.2" href="editarea_unei_pagini_implicite.htm" target="hmcontent"><span class="heading3" id="s4.4.2">Editarea unei pagini implicite (default)</span></a>
+</li>
+<li class="heading3" id="i4.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.3" href="crearea_unei_pagini_i_postarea.htm" target="hmcontent"><span class="heading3" id="s4.4.3">Crearea unei pagini și postarea unui post vacant</span></a>
+</li>
+<li class="heading3" id="i4.4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.4" href="crearea_paginii_tip_bloc.htm" target="hmcontent"><span class="heading3" id="s4.4.4">Crearea paginii tip bloc</span></a>
+</li>
+<li class="heading3" id="i4.4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.5" href="crearea_unei_pagini_lista_de_l.htm" target="hmcontent"><span class="heading3" id="s4.4.5">Crearea unei pagini lista de locații (cultură) și locațiilor aferente acesteia</span></a>
+</li>
+<li class="heading3" id="i4.4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.6" href="crearea_paginilor_tip_lista_de.htm" target="hmcontent"><span class="heading3" id="s4.4.6">Crearea paginilor tip lista de întrebări / răspunsuri (faq)</span></a>
+</li>
+<li class="heading3" id="i4.4.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.7" href="crearea_unei_pagini_cu_fiiere.htm" target="hmcontent"><span class="heading3" id="s4.4.7">Crearea unei pagini cu fișiere</span></a>
+</li>
+<li class="heading3" id="i4.4.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.8" href="crearea_unor_pagini_cu_tabele_.htm" target="hmcontent"><span class="heading3" id="s4.4.8">Crearea unor pagini cu tabele speciale</span></a>
+</li>
+<li class="heading3" id="i4.4.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.9" href="crearea_paginilor_tip_autoriza.htm" target="hmcontent"><span class="heading3" id="s4.4.9">Crearea paginilor tip autorizații (ca tabel)</span></a>
+</li>
+<li class="heading3" id="i4.4.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.10" href="crearea_paginilor_lista_primri.htm" target="hmcontent"><span class="heading3" id="s4.4.10">Crearea paginilor lista primării (orașe)</span></a>
+</li>
+<li class="heading3" id="i4.4.11" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.11" href="crearea__adugarea_i_editarea_d.htm" target="hmcontent"><span class="heading3" id="s4.4.11" ondblclick="return dblclicked(this)">Crearea, adăugarea și editarea de persoane</span></a>
+<ul id="ul4.4.11" style="list-style-type:none">
+<li class="heading4" id="i4.4.11.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.1" href="primar.htm" target="hmcontent"><span class="heading4" id="s4.4.11.1">Primar</span></a>
+</li>
+<li class="heading4" id="i4.4.11.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.2" href="viceprimar.htm" target="hmcontent"><span class="heading4" id="s4.4.11.2">Viceprimar</span></a>
+</li>
+<li class="heading4" id="i4.4.11.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.3" href="secretar_consiliul_local.htm" target="hmcontent"><span class="heading4" id="s4.4.11.3">Secretar consiliul local</span></a>
+</li>
+<li class="heading4" id="i4.4.11.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.4" href="consilieri.htm" target="hmcontent"><span class="heading4" id="s4.4.11.4">Consilieri</span></a>
+</li>
+<li class="heading4" id="i4.4.11.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.5" href="comisii.htm" target="hmcontent"><span class="heading4" id="s4.4.11.5">Comisii</span></a>
+</li>
+<li class="heading4" id="i4.4.11.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.11.6" href="personaliti_marcante.htm" target="hmcontent"><span class="heading4" id="s4.4.11.6">Personalități marcante</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.4.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.12" href="crearea_paginilor_cu_formularu.htm" target="hmcontent"><span class="heading3" id="s4.4.12">Crearea paginilor cu formularul pentru înscriere la audiență</span></a>
+</li>
+<li class="heading3" id="i4.4.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.13" href="crearea_paginilor_calendar_i_p.htm" target="hmcontent"><span class="heading3" id="s4.4.13">Crearea paginilor calendar și plasarea evenimentelor în calendar</span></a>
+</li>
+<li class="heading3" id="i4.4.14" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.14" href="crearea_paginii_pentru_petiii_.htm" target="hmcontent"><span class="heading3" id="s4.4.14">Crearea paginii pentru petiții on-line și gestiunea lor</span></a>
+</li>
+<li class="heading3" id="i4.4.15" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.15" href="crearea_paginilor_cadrul_legal.htm" target="hmcontent"><span class="heading3" id="s4.4.15">Crearea paginilor cadrul legal apl sau linkuri externe</span></a>
+</li>
+<li class="heading3" id="i4.4.16" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.16" href="crearea_paginilor_cu_documente.htm" target="hmcontent"><span class="heading3" id="s4.4.16">Crearea paginilor cu documente grupate în dosare (mape)</span></a>
+</li>
+<li class="heading3" id="i4.4.17" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.17" href="crearea_noutilor_i_alertelor.htm" target="hmcontent"><span class="heading3" id="s4.4.17">Crearea noutăților și alertelor</span></a>
+</li>
+<li class="heading3" id="i4.4.18" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.18" href="crearea_paginilor_anunuri_i_al.htm" target="hmcontent"><span class="heading3" id="s4.4.18">Crearea paginilor anunțuri și alerte</span></a>
+</li>
+<li class="heading3" id="i4.4.19" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.19" href="crearea_paginilor_simple_ca_li.htm" target="hmcontent"><span class="heading3" id="s4.4.19">Crearea paginilor simple ca listă de articole</span></a>
+</li>
+<li class="heading3" id="i4.4.20" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.20" href="plasarea_anunurilor_de_achizii.htm" target="hmcontent"><span class="heading3" id="s4.4.20">Plasarea anunțurilor de achiziții publice</span></a>
+</li>
+<li class="heading3" id="i4.4.21" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.21" href="crearea_unei_pagini_consultri_.htm" target="hmcontent"><span class="heading3" id="s4.4.21">Crearea unei pagini consultări curente</span></a>
+</li>
+<li class="heading3" id="i4.4.22" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.22" href="crearea_paginilor_ordinea_de_z.htm" target="hmcontent"><span class="heading3" id="s4.4.22">Crearea paginilor ordinea de zi și ședințe anterioare</span></a>
+</li>
+<li class="heading3" id="i4.4.23" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.23" href="crearea_proiectelor.htm" target="hmcontent"><span class="heading3" id="s4.4.23">Crearea proiectelor</span></a>
+</li>
+<li class="heading3" id="i4.4.24" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.24" href="crearea_sondajelor_i_vizualiza.htm" target="hmcontent"><span class="heading3" id="s4.4.24">Crearea sondajelor și vizualizarea rezultatelor</span></a>
+</li>
+<li class="heading3" id="i4.4.25" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.25" href="crearea_paginilor_cu_materiale.htm" target="hmcontent"><span class="heading3" id="s4.4.25">Crearea paginilor cu materiale video și înregistrări on-line</span></a>
+</li>
+<li class="heading3" id="i4.4.26" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.26" href="lucrul_cu_pagina_modulul_acte_.htm" target="hmcontent"><span class="heading3" id="s4.4.26">Lucrul cu pagina modulul acte localemd</span></a>
+</li>
+<li class="heading3" id="i4.4.27" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.27" href="lucru_cu_pagina_contacte_i_con.htm" target="hmcontent"><span class="heading3" id="s4.4.27">Lucru cu pagina contacte și contacte utile</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="concluzii.htm" target="hmcontent"><span class="heading1" id="s5">Concluzii</span></a>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.gif','cicon2.gif','cicon1.gif');</script>
+
+
+</body>
+</html>

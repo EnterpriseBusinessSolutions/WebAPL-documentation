@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Mecanismul de autentificare în Backend</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "mecanismul_de_autentificare_in.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#F2F2F2">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Mecanismul de autentificare în Backend</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="rezumat.htm">Top</a>&nbsp;
+     <a href="informaii_generale.htm">Previous</a>&nbsp;
+     <a href="structura_cms-ului.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Așa cum am menționat, CMS-ul este un instrument de gestiune a informațiilor plasate pe site-ul pe care acesta îl administrează.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Pentru a putea accesa CMS-ul site-urilor elaborate în cadrul platformei WebAPL 1.0. e necesar de accesat (după instalarea și configurarea site-ului) sistemul prin intermediului unui cont de Utilizator (Login sau User) și Parolă (Password).</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Parola pentru administratorul sistemului WebAPL se generează la momentul lansării și setării inițiale a site-ului. Pentru crearea altor tipuri de utilizatori, administratorul are posibilitatea de a seta acești utilizatori și a atribui nume și parole. După atribuirea acestor date, utilizatorul va putea accesa sistemul CMS accesând linkul</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans'; color: #0070c0; text-decoration: underline;">http://www.denumireasiteului.md/admin</span><span style="font-size: 11pt; font-family: 'Open Sans'; color: #0070c0;"> </span><span style="font-size: 11pt; font-family: 'Open Sans';">- ex. </span><span style="font-size: 11pt; font-family: 'Open Sans'; color: #0070c0; text-decoration: underline;">http://www.taraclia.md/admin</span><span style="font-size: 11pt; font-family: 'Open Sans'; color: #0070c0;"> </span><span style="font-size: 11pt; font-family: 'Open Sans';">sau combinația de taste </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-weight: bold;">CTRL+K</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">La accesarea acestui link se va deschide pagina de autentificare care arată astfel:</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim27.png" width="268" height="248" style="margin:1px; border:none" alt="" /></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">În prima celulă se indică numele de utilizator – atribuit de administratorul site-ului, iar în celula 2 se indică parola, de altfel tot atribuită de administratorul site-ului după care se accesează butonul Logare care va permite, în condiții de indicare corectă a datelor, autentificarea în CMS a utilizatorului dat. </span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Pentru a exclude atacul de tip brute-force (brute-force este metoda prin care se poate sparge o parola prin încercarea de conectare la server de nenumărate ori, utilizând un dicționar de parole ) asupra sistemului a fost introdus securizarea de tip ”CAPCHA” (en. Completely Automated Public Turing test to tell Computers and Humans Apart). CAPCHA este o metodă automată de a determina dacă utilizatorul unui software sau site web este o persoană sau un program de calculator.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Open Sans';">Forma cea mai răspândită de CAPTCHA se prezintă sub forma unei imagini cum este reprezentată în fig. De mai sus care conține litere distorsionate pe care utilizatorul trebuie să le recunoască și să le reintroducă de la tastatură, pentru a dovedi că el este o persoană, și nu un program.</span></p>
+<p style="text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim28.png" width="30" height="30" style="margin:1px; border:none" alt="" /><span style="font-size: 11pt; font-family: 'Open Sans';"> </span><span style="font-size: 11pt; font-family: 'Open Sans'; font-style: italic;">Codul se introduce exact cum este reprezentat în imaginea generată! Aceasta &nbsp;se completează în câmpul respectiv, asigurându-se că Login-ul și parola sunt introduse &nbsp;corect, și ulterior se apasă butonul LOGIN. În caz contrar nu se va realiza autentificarea.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
